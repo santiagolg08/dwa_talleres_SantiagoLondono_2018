@@ -1385,6 +1385,60 @@ header.headerCont .iconoPokeball {
   vertical-align: sub;
 }
 
+/* line 2, ../sass/footer/_footer.scss */
+footer.footerCont {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: -moz-linear-gradient(45deg, #6343cb 0%, #baace6 100%);
+  background: -webkit-linear-gradient(45deg, #6343cb 0%, #baace6 100%);
+  background: linear-gradient(45deg, #6343cb 0%, #baace6 100%);
+  width: 100%;
+}
+/* line 10, ../sass/footer/_footer.scss */
+footer.footerCont ul {
+  list-style: none;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 600px;
+  margin: 20px auto 0;
+  text-align: center;
+  padding: 0;
+}
+/* line 19, ../sass/footer/_footer.scss */
+footer.footerCont ul li:nth-child(1) {
+  background: transparent;
+}
+/* line 21, ../sass/footer/_footer.scss */
+footer.footerCont ul li:nth-child(1) div p {
+  color: black;
+}
+/* line 24, ../sass/footer/_footer.scss */
+footer.footerCont ul li:nth-child(1):hover {
+  cursor: auto;
+  background-color: transparent;
+}
+/* line 29, ../sass/footer/_footer.scss */
+footer.footerCont ul li {
+  vertical-align: top;
+  height: 60px;
+  width: 60px;
+  border-radius: 11px;
+  background-color: rgba(99, 67, 203, 0.5);
+  display: inline-block;
+  margin: 10px;
+}
+/* line 30, ../sass/footer/_footer.scss */
+footer.footerCont ul li img {
+  max-width: 100%;
+}
+/* line 33, ../sass/footer/_footer.scss */
+footer.footerCont ul li:hover {
+  background-color: #6343cb;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "HeroRegular";
   src: url("../fonts/hero-regular/hero-regular.eot");
@@ -1423,5 +1477,10 @@ main.mainCont {
   /* line 3, ../sass/header/_media_560.scss */
   header.headerCont h1 {
     width: 30%;
+  }
+
+  /* line 3, ../sass/footer/_media_560.scss */
+  footer.footerCont ul li:nth-child(1) {
+    width: 100%;
   }
 }
