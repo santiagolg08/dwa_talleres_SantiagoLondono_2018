@@ -9,10 +9,12 @@ header.headerCont {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#009ec3',GradientType=1 );
     h1{
        	margin: 0px;
-    	width: 100%;
+    	width: 80%;
+        display: inline-block;
     }
-}
-
-header.iconoPokeball{
-	
+    .iconoPokeball{
+        @extend .sprite_1-pokeball;
+        display: inline-block;
+        vertical-align: sub;
+    }
 }

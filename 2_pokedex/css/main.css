@@ -641,6 +641,26 @@ table {
 /*------------------------- Variables --------------------*/
 /*------------------------- Amor y amistad --------------------*/
 /*------------------------- Amor y amistad --------------------*/
+/* line 56, sprites/sprite_1/*.png */
+.sprite_1-sprite, .sprite_1-favicon, .favicon, .sprite_1-pokeball, header.headerCont .iconoPokeball {
+  background-image: url('../img/sprites/sprite_1-sb9b41ec855.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-favicon, .favicon {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 40px;
+}
+
+/* line 84, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-pokeball, header.headerCont .iconoPokeball {
+  background-position: 0 0;
+  height: 40px;
+  width: 40px;
+}
+
 /*------------------------- Internal features --------------------*/
 /* line 3, ../sass/com/general/_utilidades.scss */
 .fontSize1 {
@@ -1356,7 +1376,13 @@ header.headerCont {
 /* line 10, ../sass/header/_header.scss */
 header.headerCont h1 {
   margin: 0px;
-  width: 100%;
+  width: 80%;
+  display: inline-block;
+}
+/* line 15, ../sass/header/_header.scss */
+header.headerCont .iconoPokeball {
+  display: inline-block;
+  vertical-align: sub;
 }
 
 @font-face {
@@ -1391,7 +1417,11 @@ main.mainCont {
 
 @media screen and (max-width: 560px) {
   /* line 1, ../sass/header/_media_560.scss */
-  header.headerCont h1 {
+  header.headerCont {
     text-align: center;
+  }
+  /* line 3, ../sass/header/_media_560.scss */
+  header.headerCont h1 {
+    width: 30%;
   }
 }
