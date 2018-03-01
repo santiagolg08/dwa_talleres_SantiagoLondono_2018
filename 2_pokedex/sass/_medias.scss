@@ -13,7 +13,7 @@
 	// @import "section_juego/media_800";
 }
 @media screen and (max-width: 767px ) {
-	// @import "popups/media_767";
+	@import "body/media_767";
 }
 @media screen and (max-width: 560px ) {
 	@import "header/media_560";

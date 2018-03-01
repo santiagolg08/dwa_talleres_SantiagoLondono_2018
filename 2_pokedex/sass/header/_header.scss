@@ -2,7 +2,7 @@ header.headerCont {
     width: 100%;
     color: white;
     margin: 0 auto;
-    padding: 10px;
+    padding: 1% 0 0 1%;
     background: -moz-linear-gradient(45deg, #6343cb 0%,#baace6 100%); 
     background: -webkit-linear-gradient(45deg, #6343cb 0%,#baace6 100%); 
     background: linear-gradient(45deg,#6343cb 0%,#baace6 100%); 
@@ -12,9 +12,10 @@ header.headerCont {
     	width: 80%;
         display: inline-block;
     }
-    .iconoPokeball{
-        @extend .sprite_1-pokeball;
-        display: inline-block;
-        vertical-align: sub;
-    }
+}
+
+.iconoPokeball{
+    @extend .sprite_1-pokeball;
+    display: inline-block;
+    vertical-align: sub;
 }

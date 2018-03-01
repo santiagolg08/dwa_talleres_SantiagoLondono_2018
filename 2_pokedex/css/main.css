@@ -641,22 +641,36 @@ table {
 /*------------------------- Variables --------------------*/
 /*------------------------- Amor y amistad --------------------*/
 /*------------------------- Amor y amistad --------------------*/
-/* line 56, sprites/sprite_1/*.png */
-.sprite_1-sprite, .sprite_1-favicon, .favicon, .sprite_1-pokeball, header.headerCont .iconoPokeball {
-  background-image: url('../img/sprites/sprite_1-sb9b41ec855.png');
+/* line 72, sprites/sprite_1/*.png */
+.sprite_1-sprite, .sprite_1-aire, .tipoPokemonSecundario, .sprite_1-dragon, .tipoPokemonPrincipal, .sprite_1-favicon, .favicon, .sprite_1-pokeball, .iconoPokeball {
+  background-image: url('../img/sprites/sprite_1-se198a897b7.png');
   background-repeat: no-repeat;
 }
 
 /* line 84, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-aire, .tipoPokemonSecundario {
+  background-position: 0 -130px;
+  height: 50px;
+  width: 50px;
+}
+
+/* line 84, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite_1-dragon, .tipoPokemonPrincipal {
+  background-position: 0 -80px;
+  height: 50px;
+  width: 50px;
+}
+
+/* line 84, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .sprite_1-favicon, .favicon {
-  background-position: 0 -40px;
+  background-position: 0 0;
   height: 40px;
   width: 40px;
 }
 
 /* line 84, ../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.sprite_1-pokeball, header.headerCont .iconoPokeball {
-  background-position: 0 0;
+.sprite_1-pokeball, .iconoPokeball {
+  background-position: 0 -40px;
   height: 40px;
   width: 40px;
 }
@@ -1367,7 +1381,7 @@ header.headerCont {
   width: 100%;
   color: white;
   margin: 0 auto;
-  padding: 10px;
+  padding: 1% 0 0 1%;
   background: -moz-linear-gradient(45deg, #6343cb 0%, #baace6 100%);
   background: -webkit-linear-gradient(45deg, #6343cb 0%, #baace6 100%);
   background: linear-gradient(45deg, #6343cb 0%, #baace6 100%);
@@ -1379,15 +1393,15 @@ header.headerCont h1 {
   width: 80%;
   display: inline-block;
 }
-/* line 15, ../sass/header/_header.scss */
-header.headerCont .iconoPokeball {
+
+/* line 17, ../sass/header/_header.scss */
+.iconoPokeball {
   display: inline-block;
   vertical-align: sub;
 }
 
 /* line 2, ../sass/footer/_footer.scss */
 footer.footerCont {
-  position: fixed;
   bottom: 0;
   left: 0;
   background: -moz-linear-gradient(45deg, #6343cb 0%, #baace6 100%);
@@ -1395,7 +1409,7 @@ footer.footerCont {
   background: linear-gradient(45deg, #6343cb 0%, #baace6 100%);
   width: 100%;
 }
-/* line 10, ../sass/footer/_footer.scss */
+/* line 9, ../sass/footer/_footer.scss */
 footer.footerCont ul {
   list-style: none;
   display: block;
@@ -1406,20 +1420,20 @@ footer.footerCont ul {
   text-align: center;
   padding: 0;
 }
-/* line 19, ../sass/footer/_footer.scss */
+/* line 18, ../sass/footer/_footer.scss */
 footer.footerCont ul li:nth-child(1) {
   background: transparent;
 }
-/* line 21, ../sass/footer/_footer.scss */
+/* line 20, ../sass/footer/_footer.scss */
 footer.footerCont ul li:nth-child(1) div p {
   color: black;
 }
-/* line 24, ../sass/footer/_footer.scss */
+/* line 23, ../sass/footer/_footer.scss */
 footer.footerCont ul li:nth-child(1):hover {
   cursor: auto;
   background-color: transparent;
 }
-/* line 29, ../sass/footer/_footer.scss */
+/* line 28, ../sass/footer/_footer.scss */
 footer.footerCont ul li {
   vertical-align: top;
   height: 60px;
@@ -1429,14 +1443,81 @@ footer.footerCont ul li {
   display: inline-block;
   margin: 10px;
 }
-/* line 30, ../sass/footer/_footer.scss */
+/* line 29, ../sass/footer/_footer.scss */
 footer.footerCont ul li img {
   max-width: 100%;
 }
-/* line 33, ../sass/footer/_footer.scss */
+/* line 32, ../sass/footer/_footer.scss */
 footer.footerCont ul li:hover {
   background-color: #6343cb;
   cursor: pointer;
+}
+
+/* line 1, ../sass/body/_body.scss */
+.bodyCont {
+  text-align: center;
+  padding-left: 3%;
+}
+
+/* line 6, ../sass/body/_body.scss */
+.pokemonCont {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* line 17, ../sass/body/_body.scss */
+.nombreCont {
+  text-align: center;
+  background: -moz-linear-gradient(45deg, #6343cb 0%, #baace6 100%);
+  background: -webkit-linear-gradient(45deg, #6343cb 0%, #baace6 100%);
+  background: linear-gradient(45deg, #6343cb 0%, #baace6 100%);
+  border-radius: 11px;
+}
+/* line 23, ../sass/body/_body.scss */
+.nombreCont h1 {
+  display: inline-block;
+}
+/* line 26, ../sass/body/_body.scss */
+.nombreCont div {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 1%;
+}
+
+/* line 42, ../sass/body/_body.scss */
+.imagePokemon {
+  text-align: center;
+  width: 100%;
+}
+
+/* line 47, ../sass/body/_body.scss */
+.statsCont {
+  width: 58%;
+  display: inline-block;
+  margin-top: 5%;
+}
+/* line 51, ../sass/body/_body.scss */
+.statsCont ul {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 11px;
+  background: #dddddd;
+  padding: 0;
+}
+/* line 59, ../sass/body/_body.scss */
+.statsCont ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  background: transparent;
+  margin: 5%;
 }
 
 @font-face {
@@ -1469,6 +1550,24 @@ main.mainCont {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  /* line 1, ../sass/body/_media_767.scss */
+  .pokemonCont, .statsCont {
+    width: 100%;
+    display: block;
+  }
+
+  /* line 6, ../sass/body/_media_767.scss */
+  .pokemonCont {
+    max-width: 272px;
+    margin: 5% auto -15%;
+  }
+
+  /* line 11, ../sass/body/_media_767.scss */
+  .bodyCont {
+    padding-left: 0%;
+  }
+}
 @media screen and (max-width: 560px) {
   /* line 1, ../sass/header/_media_560.scss */
   header.headerCont {
@@ -1476,10 +1575,14 @@ main.mainCont {
   }
   /* line 3, ../sass/header/_media_560.scss */
   header.headerCont h1 {
-    width: 30%;
+    width: 50%;
   }
 
-  /* line 3, ../sass/footer/_media_560.scss */
+  /* line 1, ../sass/footer/_media_560.scss */
+  footer.footerCont {
+    position: relative;
+  }
+  /* line 4, ../sass/footer/_media_560.scss */
   footer.footerCont ul li:nth-child(1) {
     width: 100%;
   }
