@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin de ilustraciones</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<section id="ingreso">
+		<form class="formCenter" target="iframe">
+			<label><h1>Ingreso</h1></label>
+			<div>
+				<label for="registroUsuario"><h3>Usuario<h3></label>
+			</div>
+			<div>
+				<input type="text" name="ingresoUsuario" id="ingresoUsuario">
+			</div>
+			<div>
+				<label for="registroPassword"><h3>contraseña<h3></label>
+			</div>
+			<div>
+				<input type="password" name="ingresoPassword" id="ingresoPassword" minlength="8">
+			</div>
+            <div class="center">
+    			<div class="inline">
+    				<input type="button" value="Ingresar" id="btn_Ingresar"></input>			
+    			</div>
+                <div class="inline">
+                    <input type="button" value="Registrar" id="link_registro"></input>  
+                </div>
+            </div>
+		</form>
+	</section>
+	<section id="registro" hidden="true">
+		<form class="formCenter" target="iframe">
+			<label><h1>Registro</h1></label>
+			<div>
+				<label for="registroUsuario"><h3>Usuario<h3></label>
+			</div>
+			<div>
+				<input type="text" name="registroUsuario" id="registroUsuario" required="true" autocomplete="off">
+			</div>
+			<div>
+				<label for="registroPassword"><h3>contraseña<h3></label>
+			</div>
+			<div>
+				<input type="text" name="registroPassword" id="registroPassword" required="true" autocomplete="off">
+			</div>
+            <div class="center">
+    			<div class="inline">
+    				<input type="button" value="Registrar" id="btn_Registrar"></input>
+    			</div>
+                <div class="inline">
+                    <input type="button" value="Ingresar" id="link_ingreso"></input>
+                </div>
+            </div>
+		</form>
+	</section>
+	<section id="paginaPrincipal" hidden="true">
+        <div id="menuDesplegable" class="sidenav">
+            <div class="center">
+                <div class="inline">
+                    <h1 id="labelMenu">Menu</h1>
+                </div>
+                <div class="inline center">
+                    <a href="javascript:void(0)" class="closebtn" id="btnCerrarMenu">&times;</a>
+                </div>
+            </div>
+            <input type="button" class="itemMenu" id="Pendientes" value="Ilustraciones Pendientes" id="btn_tareasPendientes"></input>
+            <input type="button" class="itemMenu" id="Realizadas" value="Ilustraciones Finalizadas" id="btn_tareasFinalizadas"></input>
+        </div>
+        <span id="btnMenu">&#9776; Menu</span>
+        <div id="contenidoPrincipal">
+            <div id="tareasPendientes">
+                <label><h1>Ilustraciones Pendientes</h1></label>
+                <form id="searchform">
+                    <div class="center">
+                        <div class="inline">
+                            <input type="text" placeholder="Buscar aqu&iacute;..." id="inputBuscarPendientes" required> 
+                        </div>
+                        <div class="inline">
+                            <input type="button" value="Buscar" id="btnBuscarPendientes"></input>
+                        </div>
+                        <div class="inline">
+                        <input type="button" value="Reiniciar" class="btnCancelar" id="btnCancelarPendientes"></input>
+                    </div>
+                        <div class="inline">
+                            <input type="button" value="Agregar Ilustración" id="btn_agregar"></input>
+                        </div>
+                    </div>
+                </form>
+                <div id="agregarTareas" hidden="true">
+                    <label><h1>Crear Ilustración</h1></label>
+                    <div>
+                        <label for="agregarTitulo"><h3>Titulo<h3></label>
+                    </div>
+                    <div>
+                        <input type="text" name="agregarTitulo" id="agregarTitulo" required="true">
+                    </div>
+                    <div>
+                        <label for="agregarFecha"><h3>Fecha Límite<h3></label>
+                    </div>
+                    <div>
+                        <input type="date" name="agregarFecha" id="agregarFecha" required="true">
+                        <label hidden="true"></label>
+                    </div>
+                    <div class="inline">
+                        <input type="button" value="Agregar" id="btn_AgregarTarea"></input>
+                    </div>
+                    <div class="inline">
+                        <input type="button" class="btnCancelar" value="Cancelar" id="btn_cancelarTarea"></input>
+                    </div>
+                </div>
+            </div>
+            <div id="tareasRealizadas" hidden>
+                <label><h1>Ilustraciones Finalizadas</h1></label>
+                <div class="center">
+                    <div class="inline">
+                        <input type="text" placeholder="Buscar aqu&iacute;..." id="inputBuscarFinalizadas" required> 
+                    </div>
+                    <div class="inline">
+                        <input type="button" value="Buscar" id="btnBuscarFinalizadas"></input>
+                    </div>
+                    <div class="inline">
+                        <input type="button" value="Reiniciar" class="btnCancelar" id="btnCancelarFinalizadas"></input>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</section>
+	<iframe name="iframe" hidden="true"></iframe>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
