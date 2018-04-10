@@ -18,9 +18,10 @@ header.headerCont {
 }
 
 .iconoPokeball{
-    //@extend .sprite_1-pokeball;
     display: inline-block;
-    vertical-align: sub;
+    img{
+        vertical-align: sub;
+    }
 }
 
 @media screen and (max-width: 560px ) {

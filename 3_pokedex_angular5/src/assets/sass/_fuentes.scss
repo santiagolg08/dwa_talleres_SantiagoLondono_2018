@@ -3,8 +3,8 @@
 // Definition of the function
 @mixin newFont($fontFamily, $fileName) {
   
-  $path: '../fonts/' + $fileName+ '/'+ $fileName;
-  
+  $path: "assets/fonts/" + $fileName+ '/'+ $fileName;
+ 
   @font-face {
       font-family: $fontFamily;
       src: url( $path + '.eot');
