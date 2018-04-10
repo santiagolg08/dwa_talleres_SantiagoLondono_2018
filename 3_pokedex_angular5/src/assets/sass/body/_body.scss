@@ -1,0 +1,68 @@
+.bodyCont{
+  text-align: center;
+  padding-left: 3%;
+}
+
+.pokemonCont {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+
+}
+
+.nombreCont{
+  text-align: center;
+  background: -moz-linear-gradient(45deg, #6343cb 0%,#baace6 100%); 
+  background: -webkit-linear-gradient(45deg, #6343cb 0%,#baace6 100%); 
+  background: linear-gradient(45deg,#6343cb 0%,#baace6 100%);
+  border-radius: 11px;
+  h1{
+    display: inline-block;
+  }
+  div{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 1%;
+  }
+}
+
+.tipoPokemonPrincipal{
+  @extend .sprite_1-dragon;
+
+}
+
+.tipoPokemonSecundario{
+  @extend .sprite_1-aire;
+}
+
+.imagePokemon{
+  text-align: center;
+  width: 100%;
+}
+
+.statsCont {
+  width: 58%;
+  display: inline-block;
+  margin-top: 5%;
+  ul {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 11px;
+    background: #dddddd;
+    padding: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 140px;
+      background: transparent;
+      margin: 5%;
+    }
+  }
+}
+

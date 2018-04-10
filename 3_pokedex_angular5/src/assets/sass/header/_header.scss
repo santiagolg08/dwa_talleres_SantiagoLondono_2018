@@ -1,6 +1,3 @@
-@import "../../assets/sass/com/general/variables";
-
-
 header.headerCont {
     width: 100%;
     color: white;
@@ -18,16 +15,7 @@ header.headerCont {
 }
 
 .iconoPokeball{
-    //@extend .sprite_1-pokeball;
+    @extend .sprite_1-pokeball;
     display: inline-block;
     vertical-align: sub;
-}
-
-@media screen and (max-width: 560px ) {
-    header.headerCont{
-        text-align: center;
-        h1{
-            width: 50%;
-        }
-    }
 }
