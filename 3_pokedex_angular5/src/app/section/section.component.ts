@@ -12,4 +12,20 @@ export class SectionComponent implements OnInit {
   ngOnInit() {
   }
 
+  public subirLike(event){
+    let lblLikes = document.getElementById("contLikes");
+    let contLikes = parseInt(lblLikes.innerText); 
+    contLikes ++;
+    lblLikes.innerText = String(contLikes);  
+  }
+
+  public bajarLike(event){
+    let lblLikes = document.getElementById("contLikes");
+    let contLikes = parseInt(lblLikes.innerText); 
+    if(contLikes > 0){
+      contLikes --;
+      lblLikes.innerText = String(contLikes);  
+    }
+
+  }
 }

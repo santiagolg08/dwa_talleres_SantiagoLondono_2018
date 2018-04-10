@@ -54,6 +54,19 @@
         background: transparent;
         margin: 5%;
       }
+      div{
+          padding-bottom: 3%;
+          button{
+                background-color: transparent;
+                border: 0;
+          }
+          button:active{
+                transform: perspective(600px) translateZ(-75px) rotateZ(-0.5deg) rotateX(-10deg);
+          }
+          button:focus{
+              outline: 0;
+          }
+      }
     }
   }
   
