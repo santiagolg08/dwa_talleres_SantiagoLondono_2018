@@ -1,0 +1,49 @@
+<section class="bodyCont">
+  <div class="pokemonCont">
+    <div class="nombreCont">
+      <div class="tipoPokemonPrincipal">
+        <img src="../../assets/img/sprites/sprite_1/dragon.png">
+      </div>
+      <div class="tipoPokemonSecundario">
+        <img src="../../assets/img/sprites/sprite_1/aire.png">
+      </div>
+      <h1 class="fontSize20">Rayquaza</h1>
+    </div>
+    <img src="../../assets/img/rayquaza.png" class="imagePokemon">
+  </div>
+  <div class="statsCont">
+    <ul>
+      <li>
+        <p class="fontSize20">Altura</p>
+        <p> 7,0 m </p>
+      </li>
+      <li>
+        <p class="fontSize20">Peso</p>
+        <p> 206,5 kg </p>
+      </li>
+      <li>
+        <p class="fontSize20">Sexo</p>
+        <p> Desconocido </p>
+      </li>
+      <li>
+        <p class="fontSize20">Categoría</p>
+        <p> Cielo </p>
+      </li>
+      <li>
+        <p class="fontSize20">Habilidad</p>
+        <p> Bucle Aire </p>
+      </li>
+      <div>
+        <p class="fontSize20" id="contLikes">0</p>
+        <div>
+          <button (click)="subirLike($event)">
+            <img src="../../assets/img/sprites/sprite_1/arrow-up.png">
+          </button>
+          <button (click)="bajarLike($event)">
+            <img src="../../assets/img/sprites/sprite_1/arrow-down.png">
+          </button>
+        </div>
+      </div>
+    </ul>
+  </div>
+</section>
