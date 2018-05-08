@@ -1,0 +1,29 @@
+
+
+@media screen and (max-width: 1200px ) {
+	// @import "section_home/media_1200";	
+}
+@media screen and (max-width: 990px ) {
+	// @import "header/media_990";
+}
+@media screen and (max-width: 900px ) {
+	// @import "section_juego/media_900";
+}
+@media screen and (max-width: 800px ) {
+	// @import "section_juego/media_800";
+}
+@media screen and (max-width: 767px ) {
+	@import "body/media_767";
+}
+@media screen and (max-width: 560px ) {
+	@import "header/media_560";
+	@import "footer/media_560";
+}
+@media screen and (max-width: 440px ) {
+	// @import "popups/media_440";	
+}
+
+
+
+
+
