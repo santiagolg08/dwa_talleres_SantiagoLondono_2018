@@ -24,6 +24,10 @@ header.headerCont {
     }
 }
 
+.iconoPokeball:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 560px ) {
     header.headerCont{
         text-align: center;
