@@ -1,0 +1,15 @@
+<div class="titleHome">
+    <div class="contText">
+        <h3>Listado de</h3>
+        <h1>Pokemones</h1>
+    </div>
+</div>
+<div class="contHome">
+    <div class="contPokemones">
+        <div class="itemPokemon" *ngFor="let pokemon of pokemones;">
+            <button class="btnPokemon">
+                <img class="imgPokemon" src={{pokemon.src_img}}>
+            </button>
+        </div>
+    </div>
+</div>
