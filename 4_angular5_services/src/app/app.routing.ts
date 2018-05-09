@@ -7,7 +7,6 @@ import { InfoPokemonComponent } from './info-pokemon/info-pokemon.component';
 const appRoutes: Routes = [
     { path:'', component:HomeComponent },
     { path:'home', component:HomeComponent },
-    { path:'pokemon', component:InfoPokemonComponent },
     { path:'pokemon/:ident', component:InfoPokemonComponent },    
 ];
 
