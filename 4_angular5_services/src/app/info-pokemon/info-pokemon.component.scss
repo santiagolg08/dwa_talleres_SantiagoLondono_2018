@@ -3,6 +3,14 @@
     padding-left: 3%;
   }
   
+
+  .tipoPokemonPrincipal{
+    width: 10%;
+    img{
+      width: 100%;
+    }
+  }
+
   .pokemonCont {
     width: 40%;
     display: inline-block;
@@ -74,6 +82,11 @@
     .pokemonCont, .statsCont {
         width: 100%;
         display: block; 
+    }
+    .nombreCont{
+      div{
+        vertical-align: middle; 
+      }
     }
     
     .pokemonCont {
