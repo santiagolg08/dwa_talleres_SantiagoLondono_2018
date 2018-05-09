@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PeticionService } from '../services/peticion.service'
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-info-pokemon',
@@ -10,8 +11,13 @@ import { PeticionService } from '../services/peticion.service'
 export class InfoPokemonComponent implements OnInit {
   
   public pokemones;
+  public idPokemon: string;
 
-  constructor(private _peticionService: PeticionService) { }
+  constructor(
+    private _route: ActivatedRoute,
+    private _router: Router,
+    private _peticionService: PeticionService
+  ) { }
 
   ngOnInit() {
         // Llamando al servicio _peticionService 
@@ -26,6 +32,10 @@ export class InfoPokemonComponent implements OnInit {
             console.log(errorMsj);
           }
         );
+        this._route.params.forEach((params:Params) => {
+          this.idPokemon = params['ident'];
+          console.log(params);
+        });
   }
 
   public subirLike(event) {

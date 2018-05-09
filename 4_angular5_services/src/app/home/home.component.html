@@ -7,7 +7,7 @@
 <div class="contHome">
     <div class="contPokemones">
         <div class="itemPokemon" *ngFor="let pokemon of pokemones;">
-            <button class="btnPokemon">
+            <button class="btnPokemon" (click)="verInfoPokemon(pokemon.id)">
                 <img class="imgPokemon" src={{pokemon.src_img}}>
             </button>
         </div>
